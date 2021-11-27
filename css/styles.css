@@ -634,6 +634,7 @@ hr {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-adress .logo {
