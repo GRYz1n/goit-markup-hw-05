@@ -169,9 +169,9 @@ hr {
   margin-left: auto;
 }
 
-/* .main-nav {
+.main-nav {
   border-bottom: 2px solid var(--gallery-back-color);
-} */
+}
 
 .top-site-nav .item + .item {
   margin-left: 40px;
@@ -192,7 +192,6 @@ hr {
   height: 4px;
   background-color: var(--accent-text-color);
   border-radius: 2px;
-  box-sizing: inherit;
 }
 
 .top-site-nav .link {
@@ -523,6 +522,49 @@ hr {
   justify-content: space-between;
 }
 
+/* РАЗБОР! */
+
+.work-element {
+  position: relative;
+  width: 370px;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.work-overlay {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  min-width: 370px;
+  overflow: hidden;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  background-color: var(--work-background-color);
+}
+
+.work-overlay-text {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--backdrop-frame-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* РАЗБОР! */
+
 /* our team */
 
 .team {
@@ -699,53 +741,39 @@ hr {
 }
 
 .portfolio-image {
-  display: flex;
+  /* display: flex; */
   position: relative;
   overflow: hidden;
 }
 
-/* РАЗБОР! */
-
-.work-element {
-  position: relative;
-  width: 370px;
-  overflow: hidden;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.work-overlay {
+.portfolio-overlay {
+  /* display: flex; */
   position: absolute;
-  width: 370px;
-  height: 70px;
   bottom: 0;
-  right: 0;
-  display: flex;
-  min-width: 370px;
-  overflow: hidden;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  left: 0;
+  background-color: var(--portfolio-overlay-color);
 
-  background-color: var(--work-background-color);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  opacity: 1;
+}
+
+.portfolio-element:hover .portfolio-overlay {
+  transform: translateY(0);
 }
 
 .overlay-text {
-  padding-top: 27px;
-  padding-bottom: 27px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 63px 24px;
 
-  color: var(--backdrop-frame-color);
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
 
-/* РАЗБОР! */
+  color: var(--white-text-color);
+}
 
 /* -------------------FOOTER---------------------- */
 
