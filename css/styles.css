@@ -2,6 +2,7 @@
   --background-dark: #2f303a;
   --background-hero: #c4c4c4;
   --background-white: #ffffff;
+  --page-header-color: #ececec;
   --team-main: #f5f4fa;
   --primary-text-color: #212121;
   --accent-text-color: #2196f3;
@@ -60,14 +61,14 @@ p {
   margin: 0;
 }
 
-hr {
-  /* width: 1600px; */
+/* hr {
+  width: 1600px;
   border-bottom: 1px;
   color: rgba(236, 236, 236, 1);
   margin-top: 0px;
   margin-bottom: 0px;
   border-width: 0.5px;
-}
+} */
 
 .list {
   padding: 0;
@@ -169,8 +170,9 @@ hr {
   margin-left: auto;
 }
 
-.main-nav {
-  border-bottom: 2px solid var(--gallery-back-color);
+.page-header {
+  background-color: var(--background-white);
+  border-bottom: 2px solid var(--page-header-color);
 }
 
 .top-site-nav .item + .item {
