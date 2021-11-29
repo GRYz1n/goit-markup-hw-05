@@ -51,9 +51,12 @@
 
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nostrum officiis maiores nemo eum voluptates, voluptate eos optio, a commodi possimus qui nam est. 
-                                Ipsum unde voluptate error corrupti neque, facilis ipsam autem esse necessitatibus, nulla tempore illum ipsa quia.</p>
-                            <button data-modal-close>Закрыть</button>
+                            <p class="backdrop-text">Lorem ipsum dolor</p>
+                            <button class="close-button" data-modal-close>
+                                <svg class="close-icon">
+                                    <use href="./images/svg/hero/defs.svg#icon-close-black"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
             </div>
@@ -102,14 +105,29 @@
             <div class="container">
                 <h2 class="work-title">Чем мы занимаемся</h2>
                     <ul class="work-list">
-                        <li>
-                            <img src="./images/work1.jpg" width="370" height="294" alt="код">
+                        <li class="work-element">
+                            <a href="" class="link-work">
+                                <img src="./images/work1.jpg" width="370" height="294" alt="код">
+                                <div class="work-overlay">
+                                    <p class="overlay-text">Десктопные приложения</p>
+                                </div>
+                            </a>
                         </li>
-                        <li>
-                            <img src="./images/work2.jpg" width="370" height="294" alt="мобильные приложения">
+                        <li class="work-element">
+                            <a href="" class="link-work">
+                                <img src="./images/work2.jpg" width="370" height="294" alt="мобильные приложения">
+                                <div class="work-overlay">
+                                    <p class="overlay-text">Мобильные приложения</p>
+                                </div>
+                            </a>
                         </li>
-                        <li>
-                            <img src="./images/work3.jpg" width="370" height="294" alt="дизайн">
+                        <li class="work-element">
+                            <a href="" class="link-work">
+                                <img src="./images/work3.jpg" width="370" height="294" alt="дизайн">
+                                <div class="work-overlay">
+                                    <p class="overlay-text">Дизайнерские решения</p>
+                                </div>
+                            </a>
                         </li>   
                     </ul>
             </div>
