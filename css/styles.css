@@ -15,6 +15,7 @@
   --background-soc-color: rgba(255, 255, 255, 0.1);
   --sprite-fill-color: #afb1b8;
   --sprite-accent-color: #2196f3;
+  --portfolio-overlay-color: rgba(33, 150, 243, 0.9);
   --card-set-gap: 30px;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -56,7 +57,7 @@ p {
 }
 
 hr {
-  width: 1600px;
+  /* width: 1600px; */
   border-bottom: 1px;
   color: rgba(236, 236, 236, 1);
   margin-top: 0px;
@@ -638,9 +639,9 @@ hr {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--portfolio-overlay-color);
   transform: translateY(100%);
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
   opacity: 1;
 }
