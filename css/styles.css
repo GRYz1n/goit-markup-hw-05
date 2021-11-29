@@ -61,15 +61,6 @@ p {
   margin: 0;
 }
 
-/* hr {
-  width: 1600px;
-  border-bottom: 1px;
-  color: rgba(236, 236, 236, 1);
-  margin-top: 0px;
-  margin-bottom: 0px;
-  border-width: 0.5px;
-} */
-
 .list {
   padding: 0;
   margin: 0;
@@ -171,7 +162,6 @@ p {
 }
 
 .page-header {
-  background-color: var(--background-white);
   border-bottom: 2px solid var(--page-header-color);
 }
 
