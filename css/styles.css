@@ -175,6 +175,24 @@ hr {
 
 .top-site-nav .item + .item {
   margin-left: 40px;
+  position: relative;
+  display: list-item;
+}
+
+.item {
+  position: relative;
+}
+
+.current::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-text-color);
+  border-radius: 2px;
+  box-sizing: inherit;
 }
 
 .top-site-nav .link {
