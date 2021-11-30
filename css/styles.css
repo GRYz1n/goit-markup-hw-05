@@ -746,13 +746,13 @@ p {
 }
 
 .portfolio-image {
-  display: flex;
+  /* display: flex; */
   position: relative;
   overflow: hidden;
 }
 
 .portfolio-overlay {
-  display: flex;
+  /* display: flex; */
   position: absolute;
   bottom: 0;
   left: 0;
