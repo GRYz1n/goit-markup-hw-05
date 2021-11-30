@@ -21,6 +21,7 @@
   --portfolio-overlay-color: rgba(33, 150, 243, 0.9);
   --work-overlay-color: rgba(47, 48, 58, 0.8);
   --work-background-color: rgba(47, 48, 58, 0.8);
+  --timing: cubic-bezier(0.4, 0, 0.2, 1);
   --card-set-gap: 30px;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -196,6 +197,8 @@ p {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .top-site-nav .current.link,
@@ -230,12 +233,15 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .email-and-phone {
   color: var(--background-hero);
   margin-left: 30px;
 }
+
 .email-and-phone:first-child {
   margin-left: 0px;
 }
@@ -375,6 +381,8 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:focus,
 .button:hover {
@@ -399,7 +407,10 @@ p {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .nav-list li {
   margin-right: 8px;
 }
@@ -620,6 +631,7 @@ p {
   justify-content: center;
   border-radius: 50px;
   fill: var(--sprite-fill-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-socialnetworks {
@@ -655,7 +667,6 @@ p {
   box-sizing: border-box;
   border: 1px solid var(--sprite-fill-color);
   border-radius: 4px;
-  /* fill: var(--accent-text-color); */
 }
 
 .clients-link:last-child {
@@ -666,6 +677,8 @@ p {
   width: 106px;
   height: 60px;
   fill: var(--sprite-fill-color);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .icon-company,
@@ -733,13 +746,13 @@ p {
 }
 
 .portfolio-image {
-  /* display: flex; */
+  display: flex;
   position: relative;
   overflow: hidden;
 }
 
 .portfolio-overlay {
-  /* display: flex; */
+  display: flex;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -797,11 +810,15 @@ p {
   font-size: 14px;
   line-height: 1.71;
   vertical-align: Top;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address2 {
   color: var(--footer-text-color);
   font-style: normal;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list {
@@ -845,6 +862,8 @@ p {
   cursor: pointer;
   background-color: var(--background-soc-color);
   background-size: 20px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socialnetworks {
