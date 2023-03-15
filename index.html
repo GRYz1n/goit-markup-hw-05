@@ -17,7 +17,7 @@
 <body class="body">
 
     <!-- Header top -->
-    <header class="page-header">
+    <header class="page page__header">
         <div class="header container">
             <nav class="header__menu">
                 <a href="./index.html" class="logo"> <span class="web">Web</span>Studio</a>
@@ -377,6 +377,15 @@
         </div>
     </footer>
     <!-- /Footer -->
+
+    <script>
+        const { height: pageHeaderHeight } = document
+            .querySelector(".page__header")
+            .getBoundingClientRect();
+
+        document.body.style.paddingTop = '${pageHeaderHeight}px';
+    </script>
+
 </body>
 
 </html>
