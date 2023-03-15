@@ -247,6 +247,14 @@ li {
 	transition: opacity 250ms var(--timing), visibility 250ms var(--timing);
 }
 
+.backdrop__text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5px;
+	text-align: center;
+	letter-spacing: 0.02em;
+}
+
 .modal {
 	position: absolute;
 	top: 50%;
@@ -257,14 +265,14 @@ li {
 	width: 408px;
 	height: 576px;
 
-	padding: 40px 20px 40px 20px;
+	padding: 72px 24px;
 	text-align: center;
 
 	background-color: var(--backdrop-frame-color);
 	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2), 0px 1px 3px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
 }
 
-.backdrop.is-hidden {
+.backdrop--hidden {
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
@@ -272,7 +280,7 @@ li {
 	transition: opacity 250ms var(--timing), visibility 250ms var(--timing);
 }
 
-.close-button {
+.close__button {
 	position: absolute;
 	top: 24px;
 	right: 24px;
@@ -284,22 +292,22 @@ li {
 	height: 24px;
 
 	background: var(--accent);
-	border: 2px solid var(--backdrop-color);
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50px;
 	box-sizing: border-box;
 
 	cursor: pointer;
 }
 
-.close-icon {
+.close__icon {
 	width: 8px;
 	height: 8px;
 	fill: var(--dark);
 	transition: fill 250ms var(--timing);
 }
 
-.close-icon:hover,
-.close-icon:focus {
+.close__icon:hover,
+.close__icon:focus {
 	fill: var(--pressed-state);
 	transition: fill 250ms var(--timing);
 }
