@@ -47,8 +47,20 @@
         <section class="hero section overlay">
             <div class="container container--hero">
                 <h1 class="hero__title">Effective Solutions for Your Business</h1>
-                <button type="button" class="btn">Order Service</button>
+                <button type="button" class="btn" data-modal-open>Order Service</button>
+
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <p class="backdrop-text"></p>
+                        <button class="close-button" data-modal-close>
+                            <svg class="close-icon">
+                                <use href="./images/svg/hero/defs.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
+            <script src="./js/modal.js"></script>
         </section>
         <!-- /Hero -->
 
