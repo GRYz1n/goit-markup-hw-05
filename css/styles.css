@@ -627,11 +627,14 @@ li {
 	margin-bottom: 0px;
 }
 
+.portfolio__link {
+	transition: box-shadow 2500ms var(--timing);
+}
+
 .portfolio__link:hover,
 .portfolio__link:focus {
 	display: block;
 	box-shadow: var(--card-shadow);
-	transition: color, box-shadow 250ms var(--timing);
 }
 
 .portfolio__card {
