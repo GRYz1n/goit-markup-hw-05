@@ -285,7 +285,7 @@ li {
 	box-shadow: var(--backdrop-shadow);
 }
 
-.backdrop--hidden {
+.is-hidden {
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
