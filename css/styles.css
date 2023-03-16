@@ -306,32 +306,30 @@ li {
 	width: 24px;
 	height: 24px;
 
-	background: var(--cornflower);
+	color: var(--dark);
+
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50px;
 	box-sizing: border-box;
 
 	cursor: pointer;
 
-	transition: background 250ms var(--timing);
+	transition: color, background-color 250ms var(--timing);
 }
 
 .close__button:hover,
 .close__button:focus {
-	background: var(--pressed-state);
+	color: var(--accent);
+	background-color: var(--pressed-state);
+	transition: color, background-color 250ms var(--timing);
 }
 
 .close__icon {
 	width: 8px;
 	height: 8px;
 
-	fill: var(--pressed-state);
-	transition: fill 250ms var(--timing);
-}
-
-.close__icon:hover,
-.close__icon:focus {
-	fill: var(--pure-white);
+	fill: currentColor;
+	transition: fill, color 250ms var(--timing);
 }
 
 /* -------------------BUTTON---------------------- */
