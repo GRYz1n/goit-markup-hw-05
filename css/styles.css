@@ -160,13 +160,13 @@ li {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	transition: color 250ms var(--timing);
 }
 
 .current,
 .header__link:hover,
 .header__link:focus {
 	color: var(--pressed-state);
-	transition: color 250ms var(--timing);
 }
 
 .current::after {
@@ -195,6 +195,8 @@ li {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+
+	transition: color 250ms var(--timing);
 }
 
 .header__list,
@@ -210,7 +212,6 @@ li {
 .address__link:hover,
 .address__link:focus {
 	color: var(--pressed-state);
-	transition: color 250ms var(--timing);
 }
 
 /* -------------------HERO---------------------- */
@@ -301,28 +302,36 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 	width: 24px;
 	height: 24px;
 
-	background: var(--accent);
+	background: var(--cornflower);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50px;
 	box-sizing: border-box;
 
 	cursor: pointer;
+
+	transition: background 250ms var(--timing);
+}
+
+.close__button:hover,
+.close__button:focus {
+	background: var(--pressed-state);
 }
 
 .close__icon {
 	width: 8px;
 	height: 8px;
-	fill: var(--dark);
+
+	fill: var(--pressed-state);
 	transition: fill 250ms var(--timing);
 }
 
 .close__icon:hover,
 .close__icon:focus {
-	fill: var(--pressed-state);
-	transition: fill 250ms var(--timing);
+	fill: var(--pure-white);
 }
 
 /* -------------------BUTTON---------------------- */
@@ -343,12 +352,13 @@ li {
 	line-height: 1.5;
 	text-align: center;
 	letter-spacing: 0.04em;
+
+	transition: color, background-color, box-shadow, 250ms var(--timing);
 }
 
 .btn:hover,
 .btn:focus {
 	background-color: var(--pressed-state);
-	transition: background-color 250ms var(--timing);
 }
 
 /* -------------------PORTFOLIO BUTTON--------------------- */
@@ -370,6 +380,7 @@ li {
 	color: var(--primary-brand);
 	background-color: var(--light);
 	border: 1px solid var(--cornflower);
+	transition: 250ms var(--timing);
 }
 
 .btn--portfolio {
@@ -382,6 +393,7 @@ li {
 	color: var(--light);
 	background-color: var(--pressed-state);
 	box-shadow: var(--portfolio-btn-shadow);
+	border-color: transparent;
 }
 
 /* -------------------FEATURES SECTION---------------------- */
@@ -535,6 +547,7 @@ li {
 	justify-content: center;
 	border-radius: 50px;
 	background-color: var(--primary-brand);
+	transition: background-color 250ms var(--timing);
 }
 
 .icon-socialnetworks {
@@ -546,7 +559,6 @@ li {
 .link-socialnetworks:hover,
 .link-socialnetworks:focus {
 	background-color: var(--pressed-state);
-	transition: background-color 250ms var(--timing);
 }
 
 /* -------------------CUSTOMERS SECTION---------------------- */
@@ -566,6 +578,7 @@ li {
 	box-sizing: border-box;
 	border: 1px solid var(--subtle-text);
 	border-radius: 4px;
+	transition: fill, border 250ms var(--timing);
 }
 
 .customers__link:last-child {
@@ -576,19 +589,18 @@ li {
 	width: 104px;
 	height: 56px;
 	fill: var(--subtle-text);
+	transition: fill 250ms var(--timing);
 }
 
 .customers__link:hover .customers__icon,
 .customers__link:focus .customers__icon {
 	fill: var(--pressed-state);
-	transition: fill 250ms var(--timing);
 }
 
 .customers__link:hover,
 .customers__link:focus {
 	border: 1px solid var(--pressed-state);
 	fill: var(--pressed-state);
-	transition: border 250ms var(--timing);
 }
 
 /* -------------------PORTFOLIO---------------------- */
@@ -621,7 +633,7 @@ li {
 .portfolio__link:focus {
 	display: block;
 	box-shadow: var(--card-shadow);
-	transition: box-shadow 250ms var(--timing);
+	transition: color, box-shadow 250ms var(--timing);
 }
 
 .portfolio__card {
@@ -656,6 +668,7 @@ li {
 }
 
 .portfolio__overlay {
+	padding: 40px 32px 164px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -669,7 +682,6 @@ li {
 }
 
 .overlay__text {
-	padding: 40px 32px 164px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -679,8 +691,8 @@ li {
 	color: var(--light);
 }
 
-.portfolio__element:hover .portfolio__overlay,
-.portfolio__element:focus-within .portfolio__overlay {
+.portfolio__link:hover .portfolio__overlay,
+.portfolio__link:focus .portfolio__overlay {
 	transform: translateY(0);
 }
 
@@ -748,12 +760,12 @@ li {
 	justify-content: center;
 	border-radius: 50px;
 	fill: var(--accent);
+	transition: background-color 250ms var(--timing);
 }
 
 .footer__social--link:hover,
 .footer__social--link:focus {
 	background-color: var(--success);
-	transition: background-color 250ms var(--timing);
 }
 
 .footer__social--icon {
