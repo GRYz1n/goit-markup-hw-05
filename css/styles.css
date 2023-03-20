@@ -247,7 +247,16 @@ li {
 	letter-spacing: 0.02em;
 }
 
+.backdrop__text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5px;
+	text-align: center;
+	letter-spacing: 0.02em;
+}
+
 .backdrop {
+	display: block;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -258,22 +267,23 @@ li {
 
 	background-color: var(--backdrop-color);
 
-	transition: opacity 250ms var(--timing), visibility 250ms var(--timing);
+	opacity: 1;
+	transition: opacity 250ms var(--timing);
 }
 
-.backdrop__text {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5px;
-	text-align: center;
-	letter-spacing: 0.02em;
+.backdrop.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+	transform: translate(-50%, -50%) scale(1.1);
 }
 
 .modal {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 	border-radius: 4px;
 
 	width: 408px;
@@ -284,14 +294,10 @@ li {
 
 	background-color: var(--backdrop-background);
 	box-shadow: var(--backdrop-shadow);
-}
 
-.is-hidden {
-	visibility: hidden;
-	opacity: 0;
-	pointer-events: none;
+	transform: translate(-50%, -50%) scale(1);
 
-	transition: opacity 250ms var(--timing), visibility 250ms var(--timing);
+	transition: transform 250ms var(--timing);
 }
 
 .close__button {
